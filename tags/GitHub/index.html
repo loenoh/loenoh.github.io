@@ -220,10 +220,29 @@
             
                 <div class="postShorten-content" itemprop="articleBody">
                     <h1 id="Hexo-기본사용법-설정"><a href="#Hexo-기본사용법-설정" class="headerlink" title="Hexo 기본사용법, 설정"></a>Hexo 기본사용법, 설정</h1><p>지난 포스팅을 통해서 기본적인 설치를 마쳤다면 로컬에서 Hexo 서버를 띄워서 확인 가능합니다.<br>지난 포스팅 : Git + Hexo + Theme + Atom</p>
-<h4 id="로컬에서-확인하기"><a href="#로컬에서-확인하기" class="headerlink" title="로컬에서 확인하기"></a>로컬에서 확인하기</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<h4 id="로컬에서-확인하기"><a href="#로컬에서-확인하기" class="headerlink" title="로컬에서 확인하기"></a>로컬에서 확인하기</h4><p>hexo가 설치된 곳으로 이동해서 작업한다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
 <p>서버를 구동한 뒤 <strong><a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></strong> 으로 확인한다.</p>
 <h2 id="1-기본사용법"><a href="#1-기본사용법" class="headerlink" title="1. 기본사용법"></a>1. 기본사용법</h2><hr>
-<p>저장위치, 배포<br>로컬서버</p>
+<p>포스팅 작성하기</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post_title</span><br></pre></td></tr></table></figure>
+<p>post_title에는 포스팅의 제목을 적으면 된다.</p>
+<p>기본 포스팅들이 저장되는 위치는 /source/_posts 폴더에 저장된다.</p>
+<p>포스팅이 작성이 되면 로컬에서도 바로 확인이 가능하고 이상이 없으면 github에 배포를 한다.</p>
+<p>배포과정은</p>
+<ol>
+<li>github에 배포하기위해 로컬에 배포할 정적인 파일을 생성한다.</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+<ol>
+<li>github로 배포한다.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>축약해서<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">배포를 했는데 잘 반영이 안될 경우는 로컬에 있는 정적인 파일을 한번 지우고 다시 generate을 한번 해본다.</span><br></pre></td></tr></table></figure></p>
+<p>hexo clean<br>```</p>
+<p>스팅을 작성하고 난 후<br>저장위치</p>
+<p>배포</p>
+<p>로컬서버</p>
 
                     
                         
@@ -305,13 +324,7 @@
 
     </body>
 </html>
--qxBw8_hsmZGr2k5I0drH1du8-GxHCXGDACzCEUXpQDP6o41smT7WBgzWU3GnI1mJqYPMSzIqqbn3gyhdsoETmlnWC2FFgrh_SFUW2PFjFMItKV34XK_3jLT2iWdOZImpuG3TDnZ7ohwFcLYUQIIcs5LgPHVWuc8hA5dHt3L_vkxj0UV8XfNZbiQldJjEOana7S_DyrDRVJ2pNruohRs6Ram7k0Q9e1SXcRtiJCB2mjD-RMA6CMD7KL8aD-EYSjA5AFQSqc2r2Cg58wWu7QcnRCgmkciE9U9Ip4bSZZbn3NDoXKS7Kmq60tu_NjE2qTh24PPVZIbrLL2PxX8PQ08N4lByAEv2EmdCwxFi53SpJA-c29wza74kbpb2F4-K4HL0JzX6hsm-B4RJ3kOqZpcU2pEds-Xw8Gblp_U8A6ZmRBjOkz0tgDYWqN5PEgK2bswJUL56SYNajwztJXqNxdUY5F-ZrYOpioVhuvjohAO2n_mHCJiDShR5r=w900-h300-no" alt="hexo_logo"></p>
-<p><img src="hexo-logo.png" alt="logo"></p>
-<p><a href="https://hexo.io/" target="_blank" rel="noopener">https://hexo.io/</a><br>hexo 를 설치한다.</p>
-<p><a href="https://hexo.io/ko/" target="_blank" rel="noopener">https://hexo.io/ko/</a><br>한글화된 문서도 제공하고 있다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog /* 여기서 blog는 설치될 임의 폴더 이름 */</span><br><span class="line">cd blog /* 위에서 설치한 폴더로 이동 */</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<h2 id="Theme-설치"><a href="#Theme-설치" class="headerlink" title="Theme 설치"></a>Theme 설치</h2><p>hexo를 설치하면 기본테마(landscape)가 설치된다.</p>
-<p>다른 테마를 설치하기 위해서는 <a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a> 접속한다.<br>접속한 사이트에 있는 여러테마 중에 마음에 드는 테마를 골라서 설치하면 된다.<br>테마를 선택하면 설치문서와 데모를 볼 수 있다. 자세한 테마설치는 다음 포스팅에서 확인해본다.</p>
+://hexo.io/themes/</a> 접속한다.<br>접속한 사이트에 있는 여러테마 중에 마음에 드는 테마를 골라서 설치하면 된다.<br>테마를 선택하면 설치문서와 데모를 볼 수 있다. 자세한 테마설치는 다음 포스팅에서 확인해본다.</p>
 <h2 id="Atom-설치"><a href="#Atom-설치" class="headerlink" title="Atom 설치"></a>Atom 설치</h2><p>마크다운 에디터로 atom을 이용할 예정이다.</p>
 <ol>
 <li>atom 설치<br><a href="https://atom.io/" target="_blank" rel="noopener">https://atom.io/</a><br>여기서 다운로드해서 설치한다.</li>

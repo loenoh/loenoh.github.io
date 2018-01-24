@@ -220,10 +220,29 @@
             
                 <div class="postShorten-content" itemprop="articleBody">
                     <h1 id="Hexo-기본사용법-설정"><a href="#Hexo-기본사용법-설정" class="headerlink" title="Hexo 기본사용법, 설정"></a>Hexo 기본사용법, 설정</h1><p>지난 포스팅을 통해서 기본적인 설치를 마쳤다면 로컬에서 Hexo 서버를 띄워서 확인 가능합니다.<br>지난 포스팅 : Git + Hexo + Theme + Atom</p>
-<h4 id="로컬에서-확인하기"><a href="#로컬에서-확인하기" class="headerlink" title="로컬에서 확인하기"></a>로컬에서 확인하기</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<h4 id="로컬에서-확인하기"><a href="#로컬에서-확인하기" class="headerlink" title="로컬에서 확인하기"></a>로컬에서 확인하기</h4><p>hexo가 설치된 곳으로 이동해서 작업한다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
 <p>서버를 구동한 뒤 <strong><a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></strong> 으로 확인한다.</p>
 <h2 id="1-기본사용법"><a href="#1-기본사용법" class="headerlink" title="1. 기본사용법"></a>1. 기본사용법</h2><hr>
-<p>저장위치, 배포<br>로컬서버</p>
+<p>포스팅 작성하기</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post_title</span><br></pre></td></tr></table></figure>
+<p>post_title에는 포스팅의 제목을 적으면 된다.</p>
+<p>기본 포스팅들이 저장되는 위치는 /source/_posts 폴더에 저장된다.</p>
+<p>포스팅이 작성이 되면 로컬에서도 바로 확인이 가능하고 이상이 없으면 github에 배포를 한다.</p>
+<p>배포과정은</p>
+<ol>
+<li>github에 배포하기위해 로컬에 배포할 정적인 파일을 생성한다.</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+<ol>
+<li>github로 배포한다.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>축약해서<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">배포를 했는데 잘 반영이 안될 경우는 로컬에 있는 정적인 파일을 한번 지우고 다시 generate을 한번 해본다.</span><br></pre></td></tr></table></figure></p>
+<p>hexo clean<br>```</p>
+<p>스팅을 작성하고 난 후<br>저장위치</p>
+<p>배포</p>
+<p>로컬서버</p>
 
                     
                         
