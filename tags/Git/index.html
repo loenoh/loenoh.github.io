@@ -225,24 +225,21 @@
 <p>서버를 구동한 뒤 <strong><a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></strong> 으로 확인한다.</p>
 <h2 id="1-기본사용법"><a href="#1-기본사용법" class="headerlink" title="1. 기본사용법"></a>1. 기본사용법</h2><hr>
 <p>포스팅 작성하기</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post_title</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new 글제목</span><br></pre></td></tr></table></figure>
 <p>post_title에는 포스팅의 제목을 적으면 된다.</p>
 <p>기본 포스팅들이 저장되는 위치는 /source/_posts 폴더에 저장된다.</p>
 <p>포스팅이 작성이 되면 로컬에서도 바로 확인이 가능하고 이상이 없으면 github에 배포를 한다.</p>
 <p>배포과정은</p>
-<ol>
+<ul>
 <li>github에 배포하기위해 로컬에 배포할 정적인 파일을 생성한다.</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
-<ol>
-<li>github로 배포한다.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>축약해서<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">배포를 했는데 잘 반영이 안될 경우는 로컬에 있는 정적인 파일을 한번 지우고 다시 generate을 한번 해본다.</span><br></pre></td></tr></table></figure></p>
-<p>hexo clean<br>```</p>
-<p>스팅을 작성하고 난 후<br>저장위치</p>
-<p>배포</p>
-<p>로컬서버</p>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate  or  hexo g</span><br></pre></td></tr></table></figure>
+<ul>
+<li>github로 배포한다.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy  or  hexo d</span><br></pre></td></tr></table></figure>
+<p>한줄로도 가능하다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure></p>
+<p>배포를 했는데 잘 반영이 안될 경우는 로컬에 있는 정적인 파일을 한번 지우고 다시 generate을 한번 해 본다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure></p>
 
                     
                         
@@ -258,100 +255,6 @@
                 </div>
             
         </div>
-        
-    </article>
-    
-    <div class="pagination-bar">
-    <ul class="pagination">
-        
-        
-        <li class="pagination-number">page 1 of 1</li>
-    </ul>
-</div>
-
-</section>
-
-
-                <footer id="footer" class="main-content-wrap">
-    <span class="copyrights">
-        Copyrights &copy; 2018 Loe Noh. All Rights Reserved.
-    </span>
-</footer>
-
-            </div>
-            
-        </div>
-        
-
-
-<div id="about">
-    <div id="about-card">
-        <div id="about-btn-close">
-            <i class="fa fa-remove"></i>
-        </div>
-        
-            <h4 id="about-card-name">Loe Noh</h4>
-        
-            <div id="about-card-bio"><p>author.bio</p>
-</div>
-        
-        
-            <div id="about-card-job">
-                <i class="fa fa-briefcase"></i>
-                <br/>
-                <p>author.job</p>
-
-            </div>
-        
-        
-            <div id="about-card-location">
-                <i class="fa fa-map-marker"></i>
-                <br/>
-                Seoul, KOREA
-            </div>
-        
-    </div>
-</div>
-
-        
-        
-<div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
-        <!--SCRIPTS-->
-<script src="/assets/js/script-peofhqjkzcghmndknakluequy1y6owxdwpaqyju9ntl9zxnk7rdolb3rjjoj.min.js"></script>
-<!--SCRIPTS END-->
-
-
-
-    </body>
-</html>
-://hexo.io/themes/</a> 접속한다.<br>접속한 사이트에 있는 여러테마 중에 마음에 드는 테마를 골라서 설치하면 된다.<br>테마를 선택하면 설치문서와 데모를 볼 수 있다. 자세한 테마설치는 다음 포스팅에서 확인해본다.</p>
-<h2 id="Atom-설치"><a href="#Atom-설치" class="headerlink" title="Atom 설치"></a>Atom 설치</h2><p>마크다운 에디터로 atom을 이용할 예정이다.</p>
-<ol>
-<li>atom 설치<br><a href="https://atom.io/" target="_blank" rel="noopener">https://atom.io/</a><br>여기서 다운로드해서 설치한다.</li>
-<li>git, hexo 관련 패키지 설치 ctrl + ,(comma) 단축키로 setting에 들어간 후 install에서 패키지를 검색해서 install한다.(git-plus, atom-hexo, hexo-front-matter)</li>
-</ol>
-
-                    
-                        
-
-                    
-                    
-                        <p>
-                            <a href="/2017/12/29/git_hexo_theme_aotm/#post-footer" class="postShorten-excerpt_link link">
-                                Comment and share
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-            <a href="/2017/12/29/git_hexo_theme_aotm/">
-                <div class="postShorten-thumbnailimg">
-                    <img alt="" itemprop="image" src="https://loenoh.github.io/2017/12/29/git_hexo_theme_aotm/hexo-logo.png"/>
-                </div>
-            </a>
-            
         
     </article>
     
