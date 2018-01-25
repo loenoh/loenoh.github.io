@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="로이의 블로그">
-    <title>Archives: 2017 - 로이의 블로그</title>
+    <title>Tag: tranquilpeak - 로이의 블로그</title>
     <meta name="author" content="Loe Noh">
     
     
@@ -15,7 +15,7 @@
     
     <meta property="og:type" content="blog">
 <meta property="og:title" content="로이의 블로그">
-<meta property="og:url" content="https://loenoh.github.io/archives/2017/index.html">
+<meta property="og:url" content="https://loenoh.github.io/tags/tranquilpeak/index.html">
 <meta property="og:site_name" content="로이의 블로그">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
@@ -210,49 +210,80 @@
                         hasCoverMetaIn
                         ">
                 
+    <section class="postShorten-group main-content-wrap">
     
-<div id="archives" class="main-content-wrap">
-    <form id="filter-form" action="#">
-        <input name="date" type="text" class="form-control input--xlarge" placeholder="Search date (YYYY/MM/DD)" autofocus="autofocus">
-    </form>
-    <h5 class="archive-result text-color-base text-xlarge"></h5>
-    <section class="boxes">
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
+                        <a class="link-unstyled" href="/2018/01/25/2018/hexo tranquilpeak theme 웹폰트 적용/">
+                            Hexo Tranquilpeak Theme 웹폰트 적용
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2018-01-25T13:32:11+09:00">
+	
+		    Jan 25, 2018
+    	
+    </time>
+    
+        <span>in </span>
         
-            
-            
-            
-                
-                
-                <div class="archive archive-year box" data-date="2017">
-                    <h4 class="archive-title">
-                        <a class="link-unstyled" href="/archives/2017">2017</a>
-                    </h4>
-            
-            
-                
-                <ul class="archive-posts archive-month" data-date="201712">
-                    <h5 class="archive-title">
-                        <a class="link-unstyled" href="/archives/2017/12">December</a>
-                    </h5>
-                
-            
-            <li class="archive-post archive-day" data-date="20171231">
-                <a class="archive-post-title" href="/2017/12/31/hexo-기본사용법-설정/">Hexo-기본사용법-설정</a>
-                <span class="archive-post-date"> - dec 31, 2017</span>
-            </li>
-        
-            
-            
-            
-            
-            <li class="archive-post archive-day" data-date="20171229">
-                <a class="archive-post-title" href="/2017/12/29/git_hexo_theme_aotm/">Git + Hexo + Theme + Atom</a>
-                <span class="archive-post-date"> - dec 29, 2017</span>
-            </li>
-        
-    </section>
+    <a class="category-link" href="/categories/blog/">blog</a>, <a class="category-link" href="/categories/blog/hexo/">hexo</a>
+
+
+    
 </div>
 
+            </div>
+            
+                <div class="postShorten-content" itemprop="articleBody">
+                    <h1 id="구글-웹폰트-적용"><a href="#구글-웹폰트-적용" class="headerlink" title="구글 웹폰트 적용"></a>구글 웹폰트 적용</h1><p>포스팅을 하고 나니 왠지 모르게 폰트가 맘에 안 든다. 그래서 구글 웹폰트에서 맘에 드는 것을 선택을 해서 적용해 보도록 하자.</p>
+<p>먼저 구글 웹폰트들이 있는 곳으로 가보자</p>
+<p>구글 웹폰트 : <a href="https://fonts.google.com/earlyaccess" target="_blank" rel="noopener">https://fonts.google.com/earlyaccess</a></p>
+<p>여기서 한글은 ko로 검색을 하면 나온다.</p>
+<p>적용할 폰트를 찾았으면 CSS를 수정해야한다. 여기서는 Hanna, Noto Sans KR, Nanum Gothic Coding, Nanum Gothic을 적용해보자.</p>
+<p>여기서는 테스트 목적으로 여러가지 폰트를 적용해 볼텐데 그게 아니라면 필요한 폰트만 적용하는게 맞다고 본다.</p>
+<p>그럼  themes\tranquilpeak\source_css\tranquilpeak.scss 파일을 열어 다음 부분을 추가한다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@import</span><br><span class="line">    url(//fonts.googleapis.com/earlyaccess/notosanskr.css),</span><br><span class="line">    url(//fonts.googleapis.com/earlyaccess/nanumgothic.css),</span><br><span class="line">    url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css),</span><br><span class="line">    url(//fonts.googleapis.com/earlyaccess/hanna.css);</span><br></pre></td></tr></table></figure>
+<p>웹폰트가 위치한 부분을 지정을 했다.</p>
+<p>다음은 해당 폰트가 적용될 부분에 대해서 CSS를 열어 적용해보자.</p>
+<p>themes\tranquilpeak\source_css\utils_variables.scss 파일을 열어 각각 폰트를 변수로 지정하고 적용할 부분에 지정해 주면된다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// Font families</span><br><span class="line">$open-sans:            &apos;Open Sans&apos;;</span><br><span class="line">$open-sans-sans-serif: &apos;Open Sans&apos;, sans-serif;</span><br><span class="line">$merriweather-serif:   &apos;Merriweather&apos;, serif;</span><br><span class="line">$monospace:             Menlo, Consolas, monospace;</span><br><span class="line">$noto-sans-kr:          &apos;Noto Sans KR&apos;, sans-serif;</span><br><span class="line">$nanum-gothic-coding:   &apos;Nanum Gothic Coding&apos;, monospace;</span><br><span class="line">$nanum-gothic:          &apos;Nanum Gothic&apos;, sans-serif;</span><br><span class="line">$hanna:                 &apos;Hanna&apos;, sans-serif;</span><br></pre></td></tr></table></figure>
+<p>변수로 지정이 되었으면 아래에 적용할 폰트를 지정해 주면 된다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$font-family-base: $nanum-gothic;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$font-families: (</span><br><span class="line">   // base</span><br><span class="line">   &apos;headings&apos;:          $hanna,</span><br><span class="line">   // components</span><br><span class="line">   &apos;code&apos;:              $nanum-gothic-coding,</span><br><span class="line">   &apos;caption&apos;:           $noto-sans-kr,</span><br><span class="line">   &apos;image-gallery&apos;:     $noto-sans-kr,</span><br><span class="line">   &apos;post-header-cover&apos;: $noto-sans-kr,</span><br><span class="line">   &apos;post-meta&apos;:         $noto-sans-kr,</span><br><span class="line">   &apos;post-content&apos;:      $noto-sans-kr,</span><br><span class="line">   &apos;post-excerpt-link&apos;: $noto-sans-kr,</span><br><span class="line">   &apos;highlight&apos;:         $nanum-gothic-coding,</span><br><span class="line">   // layout</span><br><span class="line">   &apos;sidebar&apos;:           $noto-sans-kr</span><br><span class="line"> );</span><br></pre></td></tr></table></figure>
+
+                    
+                        
+
+                    
+                    
+                        <p>
+                            <a href="/2018/01/25/2018/hexo tranquilpeak theme 웹폰트 적용/#post-footer" class="postShorten-excerpt_link link">
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    <div class="pagination-bar">
+    <ul class="pagination">
+        
+        
+        <li class="pagination-number">page 1 of 1</li>
+    </ul>
+</div>
+
+</section>
 
 
                 <footer id="footer" class="main-content-wrap">

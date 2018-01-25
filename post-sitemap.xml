@@ -8,7 +8,15 @@
 
     <url>
         <loc>https://loenoh.github.io/2017/12/29/git_hexo_theme_aotm/</loc>
-        <lastmod>2018-01-24T19:17:33.051Z</lastmod>
+        <lastmod>2018-01-25T05:46:25.126Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://loenoh.github.io/2018/01/25/2018/hexo%20tranquilpeak%20theme%20%EC%9B%B9%ED%8F%B0%ED%8A%B8%20%EC%A0%81%EC%9A%A9/</loc>
+        <lastmod>2018-01-25T05:46:21.258Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -16,7 +24,7 @@
 
     <url>
         <loc>https://loenoh.github.io/2017/12/31/hexo-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%84%A4%EC%A0%95/</loc>
-        <lastmod>2018-01-24T19:11:02.391Z</lastmod>
+        <lastmod>2018-01-25T05:46:15.939Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

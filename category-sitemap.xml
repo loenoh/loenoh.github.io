@@ -7,15 +7,15 @@
     </url>
 
     <url>
-        <loc>https://loenoh.github.io/categories/hexo/</loc>
-        <lastmod>2018-01-24T19:11:02.391Z</lastmod>
+        <loc>https://loenoh.github.io/categories/blog/</loc>
+        <lastmod>2018-01-25T05:46:25.126Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://loenoh.github.io/categories/github-git-atom-hexo/</loc>
-        <lastmod>2018-01-24T19:17:33.051Z</lastmod>
+        <loc>https://loenoh.github.io/categories/blog/hexo/</loc>
+        <lastmod>2018-01-25T05:46:25.126Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
