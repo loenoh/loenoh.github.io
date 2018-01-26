@@ -7,6 +7,30 @@
     </url>
 
     <url>
+        <loc>https://loenoh.github.io/2018/01/25/2018/hexo_plugin_seo/</loc>
+        <lastmod>2018-01-25T08:11:05.556Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://loenoh.github.io/2017/12/31/hexo-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%84%A4%EC%A0%95/</loc>
+        <lastmod>2018-01-25T07:48:41.625Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://loenoh.github.io/2017/12/29/git_hexo_theme_aotm/</loc>
+        <lastmod>2018-01-25T07:28:02.936Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://loenoh.github.io/2017/12/31/2017/hexo-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%84%A4%EC%A0%95/</loc>
         <lastmod>2018-01-25T06:32:54.078Z</lastmod>
         <changefreq>weekly</changefreq>
