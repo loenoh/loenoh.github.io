@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="로이&#39;s STORY">
-    <title>Hexo-기본사용법-설정 - 로이&#39;s STORY</title>
-    <link rel="canonical" href="https://loenoh.github.io/2017/12/31/hexo-기본사용법-설정/"/>
+    <title>google-search-console - 로이&#39;s STORY</title>
+    <link rel="canonical" href="https://loenoh.github.io/01/29/2018/google-search-console/"/>
     <meta name="author" content="Loe Noh">
     
         <meta name="keywords" content="keyword1,keyword2">
@@ -19,14 +19,14 @@
     <meta name="description" content="description">
 <meta name="keywords" content="keyword1,keyword2">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="Hexo-기본사용법-설정">
-<meta property="og:url" content="https://loenoh.github.io/2017/12/31/hexo-기본사용법-설정/index.html">
+<meta property="og:title" content="google-search-console">
+<meta property="og:url" content="https://loenoh.github.io/01/29/2018/google-search-console/index.html">
 <meta property="og:site_name" content="로이&#39;s STORY">
 <meta property="og:description" content="description">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-01-25T07:48:41.625Z">
+<meta property="og:updated_time" content="2018-01-29T06:58:08.735Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo-기본사용법-설정">
+<meta name="twitter:title" content="google-search-console">
 <meta name="twitter:description" content="description">
     
     
@@ -224,20 +224,20 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title" itemprop="headline">
-            Hexo-기본사용법-설정
+            google-search-console
         </h1>
     
     
         <div class="post-meta">
-    <time itemprop="datePublished" datetime="2017-12-31T01:32:52+09:00">
+    <time itemprop="datePublished" datetime="2018-01-29T15:51:39+09:00">
 	
-		    Dec 31, 2017
+		    Jan 29, 2018
     	
     </time>
     
         <span>in </span>
         
-    <a class="category-link" href="/categories/blog/">blog</a>, <a class="category-link" href="/categories/blog/hexo/">hexo</a>
+    <a class="category-link" href="/categories/SEO/">SEO</a>, <a class="category-link" href="/categories/SEO/google/">google</a>
 
 
     
@@ -248,27 +248,7 @@
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <h1 id="Hexo-기본사용법-설정"><a href="#Hexo-기본사용법-설정" class="headerlink" title="Hexo 기본사용법, 설정"></a>Hexo 기본사용법, 설정</h1><p>지난 포스팅을 통해서 기본적인 설치를 마쳤다면 로컬에서 Hexo 서버를 띄워서 확인 가능합니다.<br>지난 포스팅 : Git + Hexo + Theme + Atom</p>
-<h4 id="로컬에서-확인하기"><a href="#로컬에서-확인하기" class="headerlink" title="로컬에서 확인하기"></a>로컬에서 확인하기</h4><p>hexo가 설치된 곳으로 이동해서 작업한다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<p>서버를 구동한 뒤 <strong><a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></strong> 으로 확인한다.</p>
-<h2 id="1-기본사용법"><a href="#1-기본사용법" class="headerlink" title="1. 기본사용법"></a>1. 기본사용법</h2><hr>
-<p>포스팅 작성하기</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new 글제목</span><br></pre></td></tr></table></figure>
-<p>post_title에는 포스팅의 제목을 적으면 된다.</p>
-<p>기본 포스팅들이 저장되는 위치는 /source/_posts 폴더에 저장된다.</p>
-<p>포스팅이 작성이 되면 로컬에서도 바로 확인이 가능하고 이상이 없으면 github에 배포를 한다.</p>
-<p>배포과정은</p>
-<ul>
-<li>github에 배포하기위해 로컬에 배포할 정적인 파일을 생성한다.</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate  or  hexo g</span><br></pre></td></tr></table></figure>
-<ul>
-<li>github로 배포한다.</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy  or  hexo d</span><br></pre></td></tr></table></figure>
-<p>한줄로도 가능하다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure></p>
-<p>배포를 했는데 잘 반영이 안될 경우는 로컬에 있는 정적인 파일을 한번 지우고 다시 generate을 한번 해 본다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure></p>
+            <h1 id="Google-Search-Console-구글-웹마스터-도구-에-사이트-등록"><a href="#Google-Search-Console-구글-웹마스터-도구-에-사이트-등록" class="headerlink" title="Google Search Console(구글 웹마스터 도구)에 사이트 등록"></a>Google Search Console(구글 웹마스터 도구)에 사이트 등록</h1><h2 id="SEO를-적용해보자"><a href="#SEO를-적용해보자" class="headerlink" title="SEO를 적용해보자"></a>SEO를 적용해보자</h2><p>지금까지 블로그에 </p>
 
             
 
@@ -279,7 +259,7 @@
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">TAGGED IN</span><br/>
                 
-    <a class="tag tag--primary tag--small t-link" href="/tags/hexo/">hexo</a>
+    <a class="tag tag--primary tag--small t-link" href="/tags/SEO/">SEO</a> <a class="tag tag--primary tag--small t-link" href="/tags/google/">google</a> <a class="tag tag--primary tag--small t-link" href="/tags/hexo/">hexo</a> <a class="tag tag--primary tag--small t-link" href="/tags/search-console/">search console</a>
 
             </div>
         
@@ -289,8 +269,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/01/25/2018/hexo tranquilpeak theme 웹폰트 적용/" data-tooltip="Hexo Tranquilpeak Theme 웹폰트 적용" aria-label="PREVIOUS: Hexo Tranquilpeak Theme 웹폰트 적용">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left" aria-hidden="true"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -299,7 +278,7 @@
             <li class="post-action">
                 
                     
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/12/31/2017/hexo-기본사용법-설정/" data-tooltip="Hexo-기본사용법-설정" aria-label="NEXT: Hexo-기본사용법-설정">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/01/25/2018/hexo_plugin_seo/" data-tooltip="Hexo Plugin SEO" aria-label="NEXT: Hexo Plugin SEO">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -317,7 +296,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://loenoh.github.io/2017/12/31/hexo-기본사용법-설정/" title="Share on Facebook">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://loenoh.github.io/01/29/2018/google-search-console/" title="Share on Facebook">
                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
                 </a>
             </li>
@@ -325,7 +304,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://loenoh.github.io/2017/12/31/hexo-기본사용법-설정/" title="Share on Twitter">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://loenoh.github.io/01/29/2018/google-search-console/" title="Share on Twitter">
                     <i class="fa fa-twitter" aria-hidden="true"></i>
                 </a>
             </li>
@@ -333,7 +312,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://loenoh.github.io/2017/12/31/hexo-기본사용법-설정/" title="Share on Google+">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://loenoh.github.io/01/29/2018/google-search-console/" title="Share on Google+">
                     <i class="fa fa-google-plus" aria-hidden="true"></i>
                 </a>
             </li>
@@ -375,8 +354,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/01/25/2018/hexo tranquilpeak theme 웹폰트 적용/" data-tooltip="Hexo Tranquilpeak Theme 웹폰트 적용" aria-label="PREVIOUS: Hexo Tranquilpeak Theme 웹폰트 적용">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left" aria-hidden="true"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -385,7 +363,7 @@
             <li class="post-action">
                 
                     
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/12/31/2017/hexo-기본사용법-설정/" data-tooltip="Hexo-기본사용법-설정" aria-label="NEXT: Hexo-기본사용법-설정">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/01/25/2018/hexo_plugin_seo/" data-tooltip="Hexo Plugin SEO" aria-label="NEXT: Hexo Plugin SEO">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -403,7 +381,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://loenoh.github.io/2017/12/31/hexo-기본사용법-설정/" title="Share on Facebook">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://loenoh.github.io/01/29/2018/google-search-console/" title="Share on Facebook">
                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
                 </a>
             </li>
@@ -411,7 +389,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://loenoh.github.io/2017/12/31/hexo-기본사용법-설정/" title="Share on Twitter">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://loenoh.github.io/01/29/2018/google-search-console/" title="Share on Twitter">
                     <i class="fa fa-twitter" aria-hidden="true"></i>
                 </a>
             </li>
@@ -419,7 +397,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://loenoh.github.io/2017/12/31/hexo-기본사용법-설정/" title="Share on Google+">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://loenoh.github.io/01/29/2018/google-search-console/" title="Share on Google+">
                     <i class="fa fa-google-plus" aria-hidden="true"></i>
                 </a>
             </li>
@@ -446,7 +424,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://loenoh.github.io/2017/12/31/hexo-기본사용법-설정/">
+                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://loenoh.github.io/01/29/2018/google-search-console/">
                     <i class="fa fa-facebook-official" aria-hidden="true"></i><span>Share on Facebook</span>
                 </a>
             </li>
@@ -454,7 +432,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://loenoh.github.io/2017/12/31/hexo-기본사용법-설정/">
+                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://loenoh.github.io/01/29/2018/google-search-console/">
                     <i class="fa fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
                 </a>
             </li>
@@ -462,7 +440,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://loenoh.github.io/2017/12/31/hexo-기본사용법-설정/">
+                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://loenoh.github.io/01/29/2018/google-search-console/">
                     <i class="fa fa-google-plus" aria-hidden="true"></i><span>Share on Google+</span>
                 </a>
             </li>
