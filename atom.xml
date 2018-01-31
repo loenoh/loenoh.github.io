@@ -60,9 +60,9 @@
       <category term="SEO" scheme="https://loenoh.github.io/categories/SEO/"/>
     
     
-      <category term="google" scheme="https://loenoh.github.io/tags/google/"/>
-    
       <category term="seo" scheme="https://loenoh.github.io/tags/seo/"/>
+    
+      <category term="google" scheme="https://loenoh.github.io/tags/google/"/>
     
   </entry>
   
@@ -158,11 +158,11 @@
       <category term="hexo" scheme="https://loenoh.github.io/categories/hexo/"/>
     
     
-      <category term="hexo" scheme="https://loenoh.github.io/tags/hexo/"/>
-    
       <category term="github" scheme="https://loenoh.github.io/tags/github/"/>
     
       <category term="atom" scheme="https://loenoh.github.io/tags/atom/"/>
+    
+      <category term="hexo" scheme="https://loenoh.github.io/tags/hexo/"/>
     
       <category term="theme" scheme="https://loenoh.github.io/tags/theme/"/>
     
