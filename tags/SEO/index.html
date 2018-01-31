@@ -248,6 +248,41 @@
                 <div class="postShorten-content" itemprop="articleBody">
                     <p>지금까지 블로그에 Plugin을 이용해서 몇가지 SEO를 적용해 보았다.<br>이제 구글 웹마스터 도구에 블로그 컨텐츠를 구글봇이 잘 크롤링할 수 있도록 등록해 보자.</p>
 <p>사이트 : <a href="https://www.google.co.kr/webmasters/tools" target="_blank" rel="noopener">Google Search Console</a></p>
+<p>크게 아래와 같은 순서로 진행하면 될 듯 하다.</p>
+<ol>
+<li>회원가입</li>
+<li>속성추가</li>
+<li>Sitemaps</li>
+<li>robots.txt</li>
+<li>Fetch As Google</li>
+<li>site: 개인도메인</li>
+</ol>
+<p>여기서는 회원가입은 생략하도록 한다.</p>
+<h3 id="속성-추가"><a href="#속성-추가" class="headerlink" title="속성 추가"></a>속성 추가</h3><p>이제 블로그를 추가할려면 메인페이지에 속성추가를 클릭하면 된다.<br>사이트 소유권확인하는 페이지로 이동한다.<br>소유권확인은 <code>HTML 파일 업로드</code>와 다른 대체 방법으로 사이트를 확인해야한다.<br>주로 소유권확인페이지에서 파일을 다운 받아서 루트에 올려서 확인하는 방법이 보편적이나 구글애널리틱스에 미리 가입을 하신분이면 대체방법 중에 <code>Google 애널리틱스</code>를 선택하고 확인하는 방법도 있다.</p>
+<p>참고로 Google 애널리틱스에 미리 등록이 되어져 있으신 분은 그림에서 추적ID를 블로그에 적용하면 된다.</p>
+<p><img src="/image/googleanalytics.jpg" alt="구글애널리틱스속성"></p>
+<p>테마 환경설정 파일 <code>_cofig.yml</code> 파일에서 다음 항목에 추가하면 된다.</p>
+<p><code>google_analytics_id: UA-XXXXXXXX-X</code></p>
+<p>기본적으로 네이버블로그나 기타 FTP접근이나 head부분에 소스 수정이 불가한 경우는 소유권확인을 할 수 없다.</p>
+<p>소유권확인하는 페이지에 설명이 있지만 좀 더 알아보고자 하시는 분은 <code><a href="https://support.google.com/webmasters/answer/35179?authuser=0" target="_blank" rel="noopener">구글 사이트 소유권확인</a></code>에서 확인이 가능하다.</p>
+<h3 id="sitemaps"><a href="#sitemaps" class="headerlink" title="sitemaps"></a>sitemaps</h3><p>속성을 추가하여 사이트 소유권 확인이 되면 왼쪽 메뉴중 <code>크롤링 &gt; Sitemaps</code> 메뉴에서 이전에 만든 sitemap.xml을 추가하면 된다.<br>먼저 sitemap추가/테스트부터 해보자.<br>오른쪽 상단 SITEMAP 추가/테스트 버튼으로 테스트와 추가가 가능하다.</p>
+<p><img src="/image/sitemap.jpg" alt="sitemap추가/테스트"></p>
+<p>제출 후 바로 반영되지는 않는다. 보통 하루는 걸리는 것 같다.<br>제출하고 다음날 확인하면 제출된 결과가 그래프로도 나온다.</p>
+<h3 id="robots-txt-테스터"><a href="#robots-txt-테스터" class="headerlink" title="robots.txt 테스터"></a>robots.txt 테스터</h3><p>sitemap 처럼 작성해둔 robots.txt 파일을 테스트 후 제출해보자</p>
+<p>아래 그림에서 처럼 하단부에 파일명을 쓰고 테스트 후 제출하면 된다.</p>
+<p><img src="/image/robotstxt.jpg" alt="robots.txt 테스트/제출"></p>
+<h3 id="Fetch-As-Google"><a href="#Fetch-As-Google" class="headerlink" title="Fetch As Google"></a>Fetch As Google</h3><p>구글에서 사이트의 URL을 크롤링하거나 랜더링하는 방식을 테스트 할 수 있는 곳이다.<br>내 사이트를 잘 가져가고 있는지, 이미지나 스크립트가 봇을 차단하는지 등을 알 수 있다.<br>꼭 해보시길 권장한다.</p>
+<p>메뉴를 클릭해서 url 넣는 곳에 해당 페이지를 넣으면 된다.<br>넣지 않으면 루트페이지를 가져온다.</p>
+<p><code>가져오기</code> : <em>페이지 URL을 가져온다.</em><br><code>가져오기 및 렌더링</code> : <em>페이지에 포함된 리소스(이미지나 스크립트)를 렌더링합니다.</em></p>
+<p>버튼을 클릭하면 색인생성요청 이라는 버튼이 나타난다.</p>
+<p><img src="/image/fetchasgoogle1.jpg" alt="fetch as googler가져오기및렌더링"></p>
+<p>색인생성요청을 클릭하면 팝업이 나타나고 원하는 사항을 선택하고 이동을 클릭한다.</p>
+<p><img src="/image/fetchasgoogle2.jpg" alt="fetch as google제출"></p>
+<p>그리고 목록을 클릭해서 결과 확인이 가능하다.</p>
+<p>크롤링 메뉴에서는 크롤링오류나 크롤링통계도 확인 가능하다.</p>
+<p>설정이 마무리 되면 이제 구글봇들이 크롤링을 하게되고 일정 시간이 지나면 구글에 반영이 된다.<br>구글에 반영이 잘 되고 있는 지 확인은 구글 사이트에서 확인가능하다.</p>
+<p><code>site: [도메인]   ex) site:loenoh.github.io</code></p>
+<p>이렇게 치면 구글에서 크롤링된 페이지가 검색이 된다.</p>
 
                     
                         
