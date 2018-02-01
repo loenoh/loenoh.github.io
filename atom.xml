@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://loenoh.github.io/"/>
-  <updated>2018-01-31T08:15:29.301Z</updated>
+  <updated>2018-02-01T07:27:58.762Z</updated>
   <id>https://loenoh.github.io/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="https://loenoh.github.io//2018/01/31/hexo-tranquilpeak-theme-disqus%EC%A0%81%EC%9A%A9/"/>
     <id>https://loenoh.github.io//2018/01/31/hexo-tranquilpeak-theme-disqus적용/</id>
     <published>2018-01-31T07:12:39.000Z</published>
-    <updated>2018-01-31T08:15:29.301Z</updated>
+    <updated>2018-02-01T07:27:58.762Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Hexo-블로그에서-Disqus를-사용해보자"><a href="#Hexo-블로그에서-Disqus를-사용해보자" class="headerlink" title="Hexo 블로그에서 Disqus를 사용해보자."></a>Hexo 블로그에서 Disqus를 사용해보자.</h2><p>Disqus는 블로그 포스트 하단에 댓글을 달 수 있게 해주는 기능이다.</p><p>먼저 <a href="https://disqus.com/" target="_blank" rel="noopener">Disqus 사이트</a>에서 가입을 해야한다.</p><p>가입을 한 후 Home &gt; setting &gt; Admin &gt; General  메뉴에 가면 다음 화면이 나타난다.</p><p><img src="/image/disquesetting1.jpg" alt="disqus_setting"></p><p>Add버튼을 클릭하면 댓글을 달 사이트를 등록하는 화면이 나온다.</p><p><img src="/image/disquesetting2.jpg" alt="disqus_setting"></p><p>사이트를 만들고 나면 disqus를 설치할 사이트가 어떤 플랫폼인지 선택하라는 페이지가 나온다.<br>해당 플랫폼이 없으면 하단부에</p><p><code>I don&#39;t see my platform listed, install manually with Universal Code.</code> 라는</p><p>버튼을 클릭하면 소스에 직접 삽입할 수 있는 코드가 나타난다.</p><p><img src="/image/disquesetting3.jpg" alt="disqus_setting"></p><p>Hexo블로그는 플랫폼에는 없지만 왼쪽 <code>Configure Disqus</code>로 바로 넘어가도 무방하다.</p><p><img src="/image/disquesetting4.jpg" alt="disqus_setting"></p><p><code>Website Name, Website URL, Category, Description, Language</code>를 세팅하고 마치면 된다.</p><p>세팅이 끝난 후 Admin 페이지에 가보면 <code>Shortname</code> 이 보일 것이다.<br>이것은 unique하고 변경도 되지 않는다. 만약 다른것을 사용하고 싶으면 다시 추가해야 된다.</p><p>그러면 Hexo 블로그 테마 환경 설정 파일 <code>_config.yml</code>에 추가하면된다.</p><p><code>disqus_shortname: [추가된 해당 사이트의 shortname]</code></p><p>이렇게 세팅하고 포스팅 하단을 확인하면 댓글을 달 수 있는 부분이 추가되어 있을 것이다.</p>]]></content>
     
     <summary type="html">
     
-      disqus 댓글 적용
+      disqus 댓글 적용 Disqus는 블로그 포스트 하단에 댓글을 달 수 있게 해주는 기능이다. 먼저 Disqus 사이트에서 가입을 해야한다. 가입을 한 후 Home &gt; setting &gt; Admin &gt; General 메뉴에 가면 다음 화면이 나타난다. 사이트를 만들고 나면 disqus를 설치할 사이트가 어떤 플랫폼인지 선택하라는 페이지가 나온다. 해당 플랫폼이 없으면 하단부에 라는 버튼을 클릭하면 소스에 직접 삽입할 수 있는 코드가 나타난다.
     
     </summary>
     
