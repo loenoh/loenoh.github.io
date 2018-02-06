@@ -257,21 +257,21 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title" itemprop="headline">
                     
-                        <a class="link-unstyled" href="../../2018/01/31/hexo-tranquilpeak-theme-disqus적용/">
-                            Hexo Tranquilpeak Theme Disqus적용
+                        <a class="link-unstyled" href="../../2018/02/07/네이버-웹마스터도구-사이트등록-SEO/">
+                            네이버 웹마스터도구에 사이트등록 SEO
                         </a>
                     
                 </h1>
                 <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2018-01-31T16:12:39+09:00">
+    <time itemprop="datePublished" datetime="2018-02-07T00:53:45+09:00">
 	
-		    Jan 31, 2018
+		    Feb 07, 2018
     	
     </time>
     
         <span>in </span>
         
-    <a class="category-link" href="../../categories/hexo/">hexo</a>
+    <a class="category-link" href="../../categories/SEO/">SEO</a>
 
 
     
@@ -280,23 +280,46 @@
             </div>
             
                 <div class="postShorten-content" itemprop="articleBody">
-                    <h2 id="Hexo-블로그에서-Disqus를-사용해보자"><a href="#Hexo-블로그에서-Disqus를-사용해보자" class="headerlink" title="Hexo 블로그에서 Disqus를 사용해보자."></a>Hexo 블로그에서 Disqus를 사용해보자.</h2><p>Disqus는 블로그 포스트 하단에 댓글을 달 수 있게 해주는 기능이다.</p>
-<p>먼저 <a href="https://disqus.com/" target="_blank" rel="noopener">Disqus 사이트</a>에서 가입을 해야한다.</p>
-<p>가입을 한 후 Home &gt; setting &gt; Admin &gt; General  메뉴에 가면 다음 화면이 나타난다.</p>
-<p><img src="/image/disquesetting1.jpg" alt="disqus_setting"></p>
-<p>Add버튼을 클릭하면 댓글을 달 사이트를 등록하는 화면이 나온다.</p>
-<p><img src="/image/disquesetting2.jpg" alt="disqus_setting"></p>
-<p>사이트를 만들고 나면 disqus를 설치할 사이트가 어떤 플랫폼인지 선택하라는 페이지가 나온다.<br>해당 플랫폼이 없으면 하단부에</p>
-<p><code>I don&#39;t see my platform listed, install manually with Universal Code.</code> 라는</p>
-<p>버튼을 클릭하면 소스에 직접 삽입할 수 있는 코드가 나타난다.</p>
-<p><img src="/image/disquesetting3.jpg" alt="disqus_setting"></p>
-<p>Hexo블로그는 플랫폼에는 없지만 왼쪽 <code>Configure Disqus</code>로 바로 넘어가도 무방하다.</p>
-<p><img src="/image/disquesetting4.jpg" alt="disqus_setting"></p>
-<p><code>Website Name, Website URL, Category, Description, Language</code>를 세팅하고 마치면 된다.</p>
-<p>세팅이 끝난 후 Admin 페이지에 가보면 <code>Shortname</code> 이 보일 것이다.<br>이것은 unique하고 변경도 되지 않는다. 만약 다른것을 사용하고 싶으면 다시 추가해야 된다.</p>
-<p>그러면 Hexo 블로그 테마 환경 설정 파일 <code>_config.yml</code>에 추가하면된다.</p>
-<p><code>disqus_shortname: [추가된 해당 사이트의 shortname]</code></p>
-<p>이렇게 세팅하고 포스팅 하단을 확인하면 댓글을 달 수 있는 부분이 추가되어 있을 것이다.</p>
+                    <p>지난 포스팅에서는 <a href="/2018/01/30/구글-웹마스터도구-사이트등록-SEO">구글 웹마스터도구에서 사이트 등록(Google Search Console)</a>을 해봤습니다.<br>이번에는 우리나라에서 제일 많이 사용하는 포털인 네이버에 사이트 등록을 해서 네이버 봇에게도 내 사이트를 잘 크롤링할 수 있게 해 보도록 하겠습니다.<br>네이버는 기본적으로 구글의 기능과 크게 다르지 않으며 구글처럼 다양한 기능이 없기 때문에 더 쉬울 수 있을 겁니다.</p>
+<p>사이트 : <a href="http://webmastertool.naver.com" target="_blank" rel="noopener">네이버 웹마스터 도구</a></p>
+<p>사이트에 접속하여 다음과 같은 작업을 하게 됩니다.</p>
+<ol>
+<li>사이트등록 및 소유확인</li>
+<li>사이트맵은</li>
+<li>RSS제출</li>
+<li>robots.txt 제출</li>
+<li>사이트 최적화 획인</li>
+</ol>
+<p>회원가입은 되어져있다는 가정하에 사이트로 이동하여 로긴을 합니다.</p>
+<h3 id="사이트-등록-및-소유확인"><a href="#사이트-등록-및-소유확인" class="headerlink" title="사이트 등록 및 소유확인"></a>사이트 등록 및 소유확인</h3><hr>
+<p>로긴하면 메인페이지 사이트등록이란 버튼을 눌러 등록할 사이트 url을 넣고 확인합니다.</p>
+<p>구글과 마찬가지로 아직 소유 미확인 상태라 메인으로 이동하면 방금 등록한 사이트에 <code>소유확인</code>이라는 버튼이 보입니다. 클릭하면 소유확인 페이지가 나타납니다.</p>
+<p><img src="/image/naverwebmastertool1.jpg" alt="네이버웹마스터도구"></p>
+<p>사이트 소유 확인은 <code>HTML 파일 업로드</code> 방법으로 합니다.</p>
+<p>보이는 페이지에서 1. HTML 확인 파일을 다운로드하여 github메인에 올려줍니다.</p>
+<p>나머지 보이는 부분을 작성하고 확인을 눌러줍니다.</p>
+<p><strong>HTML 파일 업로드</strong></p>
+<p>로컬에서 작업 후 메인에 반영되어지는 폴더(<code>블로그메인/public</code>)에 파일을 다운받고 <code>hexo d</code> 로 동기화 하면 반영된다.</p>
+<p>반영된 후 소유 확인페이지에 나와져 있는 링크로 접속하면 완료되고 메인에서도 버튼이 사라진 것이 확인됩니다.<br>(업로드한 HTML 파일로 접속)</p>
+<h3 id="사이트맵-sitemap"><a href="#사이트맵-sitemap" class="headerlink" title="사이트맵(sitemap)"></a>사이트맵(sitemap)</h3><hr>
+<p>메인페이지에서 소유확인 된 사이트를 클릭해서 들어가면 왼쪽에 요청이란 메뉴에서 사이트맵 제출을 합니다.</p>
+<p><img src="/image/naverwebmastertool2.jpg" alt="네이버사이트등록"></p>
+<p>사이트맵은 사이트 당 1개만 가능하다는 안내가 되어져 있네요.</p>
+<p>사이트가 제출되면 아래 목록에 나타나게 됩니다.</p>
+<h3 id="RSS-제출"><a href="#RSS-제출" class="headerlink" title="RSS 제출"></a>RSS 제출</h3><hr>
+<p>만들어진 rss의 주소를 등록합니다.</p>
+<p><code>ex) https://개인github주소/atom.xml</code></p>
+<p><img src="/image/naverwebmastertool3.jpg" alt="네이버RSS제출"></p>
+<p>등록이 완료되면 아래 목록에서 확인 가능합니다.</p>
+<h3 id="robots-txt"><a href="#robots-txt" class="headerlink" title="robots.txt"></a>robots.txt</h3><hr>
+<p>이번에는 robotx.txt 파일도 제출해 보겠습니다.(검증메뉴로 이동)</p>
+<p><img src="/image/naverwebmastertool4.jpg" alt="네이버robots제출"></p>
+<p>메뉴로 이동해서 이 부분도 위와 같이 robots.txt 파일이 있는 위치를 등록해 주는 것으로 마무리됩니다.</p>
+<p>이래 등록하단 부분에는 robots.txt 파일을 생생해 주는 부분도 있습니다.</p>
+<h3 id="사이트-최적화-확인"><a href="#사이트-최적화-확인" class="headerlink" title="사이트 최적화 확인"></a>사이트 최적화 확인</h3><hr>
+<p>이제 지금까지 등록한 부분들이 제대로 되었는지 확인해 볼까요?<br><code>현황 &gt; 사이트최적화</code>로 이동합니다.</p>
+<p><img src="/image/naverwebmastertool5.jpg" alt="네이버사이트최적화확인"></p>
+<p>사이트에 따라 반영이 늦어질 수 있습니다.</p>
 
                     
                         
@@ -304,7 +327,7 @@
                     
                     
                         <p>
-                            <a href="../../2018/01/31/hexo-tranquilpeak-theme-disqus적용/#post-footer" class="postShorten-excerpt_link link">
+                            <a href="../../2018/02/07/네이버-웹마스터도구-사이트등록-SEO/#post-footer" class="postShorten-excerpt_link link">
                                 Comment and share
                             </a>
                         </p>
@@ -333,7 +356,7 @@
             </a>
           </li>
         
-        <li class="pagination-number">page 2 of 7</li>
+        <li class="pagination-number">page 2 of 8</li>
     </ul>
 </div>
 
@@ -546,6 +569,25 @@
                     <hr>
                 </div>
                 
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://loenoh.github.io/2018/02/07/hexo-google-adsense/">
+                            <h3 class="media-heading">Hexo 구글애드센스(Google Adsense) 추가</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Feb 7, 2018
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
             </div>
         </div>
         <div class="modal-footer">
@@ -553,7 +595,7 @@
                 data-message-zero="no post found"
                 data-message-one="1 post found"
                 data-message-other="{n} posts found">
-                7 posts found
+                8 posts found
             </p>
         </div>
     </div>
