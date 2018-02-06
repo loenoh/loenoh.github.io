@@ -258,6 +258,94 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title" itemprop="headline">
                     
+                        <a class="link-unstyled" href="../../2018/02/07/네이버-웹마스터도구-사이트등록-SEO/">
+                            네이버 웹마스터도구에 사이트등록 SEO
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2018-02-07T00:53:45+09:00">
+	
+		    Feb 07, 2018
+    	
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="">SEO</a>
+
+
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content" itemprop="articleBody">
+                    <p>지난 포스팅에서는 <a href="/2018/01/30/구글-웹마스터도구-사이트등록-SEO">구글 웹마스터도구에서 사이트 등록(Google Search Console)</a>을 해봤습니다.<br>이번에는 우리나라에서 제일 많이 사용하는 포털인 네이버에 사이트 등록을 해서 네이버 봇에게도 내 사이트를 잘 크롤링할 수 있게 해 보도록 하겠습니다.<br>네이버는 기본적으로 구글의 기능과 크게 다르지 않으며 구글처럼 다양한 기능이 없기 때문에 더 쉬울 수 있을 겁니다.</p>
+<p>사이트 : <a href="http://webmastertool.naver.com" target="_blank" rel="noopener">네이버 웹마스터 도구</a></p>
+<p>사이트에 접속하여 다음과 같은 작업을 하게 됩니다.</p>
+<ol>
+<li>사이트등록 및 소유확인</li>
+<li>사이트맵은</li>
+<li>RSS제출</li>
+<li>robots.txt 제출</li>
+<li>사이트 최적화 획인</li>
+</ol>
+<p>회원가입은 되어져있다는 가정하에 사이트로 이동하여 로긴을 합니다.</p>
+<h3 id="사이트-등록-및-소유확인"><a href="#사이트-등록-및-소유확인" class="headerlink" title="사이트 등록 및 소유확인"></a>사이트 등록 및 소유확인</h3><hr>
+<p>로긴하면 메인페이지 사이트등록이란 버튼을 눌러 등록할 사이트 url을 넣고 확인합니다.</p>
+<p>구글과 마찬가지로 아직 소유 미확인 상태라 메인으로 이동하면 방금 등록한 사이트에 <code>소유확인</code>이라는 버튼이 보입니다. 클릭하면 소유확인 페이지가 나타납니다.</p>
+<p><img src="/image/naverwebmastertool1.jpg" alt="네이버웹마스터도구"></p>
+<p>사이트 소유 확인은 <code>HTML 파일 업로드</code> 방법으로 합니다.</p>
+<p>보이는 페이지에서 1. HTML 확인 파일을 다운로드하여 github메인에 올려줍니다.</p>
+<p>나머지 보이는 부분을 작성하고 확인을 눌러줍니다.</p>
+<p><strong>HTML 파일 업로드</strong></p>
+<p>로컬에서 작업 후 메인에 반영되어지는 폴더(<code>블로그메인/public</code>)에 파일을 다운받고 <code>hexo d</code> 로 동기화 하면 반영된다.</p>
+<p>반영된 후 소유 확인페이지에 나와져 있는 링크로 접속하면 완료되고 메인에서도 버튼이 사라진 것이 확인됩니다.<br>(업로드한 HTML 파일로 접속)</p>
+<h3 id="사이트맵-sitemap"><a href="#사이트맵-sitemap" class="headerlink" title="사이트맵(sitemap)"></a>사이트맵(sitemap)</h3><hr>
+<p>메인페이지에서 소유확인 된 사이트를 클릭해서 들어가면 왼쪽에 요청이란 메뉴에서 사이트맵 제출을 합니다.</p>
+<p><img src="/image/naverwebmastertool2.jpg" alt="네이버사이트등록"></p>
+<p>사이트맵은 사이트 당 1개만 가능하다는 안내가 되어져 있네요.</p>
+<p>사이트가 제출되면 아래 목록에 나타나게 됩니다.</p>
+<h3 id="RSS-제출"><a href="#RSS-제출" class="headerlink" title="RSS 제출"></a>RSS 제출</h3><hr>
+<p>만들어진 rss의 주소를 등록합니다.</p>
+<p><code>ex) https://개인github주소/atom.xml</code></p>
+<p><img src="/image/naverwebmastertool3.jpg" alt="네이버RSS제출"></p>
+<p>등록이 완료되면 아래 목록에서 확인 가능합니다.</p>
+<h3 id="robots-txt"><a href="#robots-txt" class="headerlink" title="robots.txt"></a>robots.txt</h3><hr>
+<p>이번에는 robotx.txt 파일도 제출해 보겠습니다.(검증메뉴로 이동)</p>
+<p><img src="/image/naverwebmastertool4.jpg" alt="네이버robots제출"></p>
+<p>메뉴로 이동해서 이 부분도 위와 같이 robots.txt 파일이 있는 위치를 등록해 주는 것으로 마무리됩니다.</p>
+<p>이래 등록하단 부분에는 robots.txt 파일을 생생해 주는 부분도 있습니다.</p>
+<h3 id="사이트-최적화-확인"><a href="#사이트-최적화-확인" class="headerlink" title="사이트 최적화 확인"></a>사이트 최적화 확인</h3><hr>
+<p>이제 지금까지 등록한 부분들이 제대로 되었는지 확인해 볼까요?<br><code>현황 &gt; 사이트최적화</code>로 이동합니다.</p>
+<p><img src="/image/naverwebmastertool5.jpg" alt="네이버사이트최적화확인"></p>
+<p>사이트에 따라 반영이 늦어질 수 있습니다.</p>
+
+                    
+                        
+
+                    
+                    
+                        <p>
+                            <a href="../../2018/02/07/네이버-웹마스터도구-사이트등록-SEO/#post-footer" class="postShorten-excerpt_link link">
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
                         <a class="link-unstyled" href="../../2018/01/30/구글-웹마스터도구-사이트등록-SEO/">
                             구글 웹마스터도구(Google Search Console)에 사이트 등록
                         </a>
@@ -293,20 +381,24 @@
 <li>구글 검색 확인</li>
 </ol>
 <p>여기서는 회원가입은 생략하도록 한다.</p>
-<h3 id="속성-추가"><a href="#속성-추가" class="headerlink" title="속성 추가"></a>속성 추가</h3><p>이제 블로그를 추가할려면 메인페이지에 속성추가를 클릭하면 된다.<br>사이트 소유권확인하는 페이지로 이동한다.<br>소유권확인은 <code>HTML 파일 업로드</code>와 다른 대체 방법으로 사이트를 확인해야한다.<br>주로 소유권확인페이지에서 파일을 다운 받아서 루트에 올려서 확인하는 방법이 보편적이나 구글애널리틱스에 미리 가입을 하신분이면 대체방법 중에 <code>Google 애널리틱스</code>를 선택하고 확인하는 방법도 있다.</p>
+<h3 id="속성-추가"><a href="#속성-추가" class="headerlink" title="속성 추가"></a>속성 추가</h3><hr>
+<p>이제 블로그를 추가할려면 메인페이지에 속성추가를 클릭하면 된다.<br>사이트 소유권확인하는 페이지로 이동한다.<br>소유권확인은 <code>HTML 파일 업로드</code>와 다른 대체 방법으로 사이트를 확인해야한다.<br>주로 소유권확인페이지에서 파일을 다운 받아서 루트에 올려서 확인하는 방법이 보편적이나 구글애널리틱스에 미리 가입을 하신분이면 대체방법 중에 <code>Google 애널리틱스</code>를 선택하고 확인하는 방법도 있다.</p>
 <p>참고로 Google 애널리틱스에 미리 등록이 되어져 있으신 분은 그림에서 추적ID를 블로그에 적용하면 된다.</p>
 <p><img src="/image/googleanalytics.jpg" alt="구글애널리틱스속성"></p>
 <p>테마 환경설정 파일 <code>_cofig.yml</code> 파일에서 다음 항목에 추가하면 된다.</p>
 <p><code>google_analytics_id: UA-XXXXXXXX-X</code></p>
 <p>기본적으로 네이버블로그나 기타 FTP접근이나 head부분에 소스 수정이 불가한 경우는 소유권확인을 할 수 없다.</p>
 <p>소유권확인하는 페이지에 설명이 있지만 좀 더 알아보고자 하시는 분은 <code><a href="https://support.google.com/webmasters/answer/35179?authuser=0" target="_blank" rel="noopener">구글 사이트 소유권확인</a></code>에서 확인이 가능하다.</p>
-<h3 id="sitemaps"><a href="#sitemaps" class="headerlink" title="sitemaps"></a>sitemaps</h3><p>속성을 추가하여 사이트 소유권 확인이 되면 왼쪽 메뉴중 <code>크롤링 &gt; Sitemaps</code> 메뉴에서 이전에 만든 sitemap.xml을 추가하면 된다.<br>먼저 sitemap추가/테스트부터 해보자.<br>오른쪽 상단 SITEMAP 추가/테스트 버튼으로 테스트와 추가가 가능하다.</p>
+<h3 id="sitemaps"><a href="#sitemaps" class="headerlink" title="sitemaps"></a>sitemaps</h3><hr>
+<p>속성을 추가하여 사이트 소유권 확인이 되면 왼쪽 메뉴중 <code>크롤링 &gt; Sitemaps</code> 메뉴에서 이전에 만든 sitemap.xml을 추가하면 된다.<br>먼저 sitemap추가/테스트부터 해보자.<br>오른쪽 상단 SITEMAP 추가/테스트 버튼으로 테스트와 추가가 가능하다.</p>
 <p><img src="/image/sitemap.jpg" alt="sitemap추가/테스트"></p>
 <p>제출 후 바로 반영되지는 않는다. 보통 하루는 걸리는 것 같다.<br>제출하고 다음날 확인하면 제출된 결과가 그래프로도 나온다.</p>
-<h3 id="robots-txt-테스터"><a href="#robots-txt-테스터" class="headerlink" title="robots.txt 테스터"></a>robots.txt 테스터</h3><p>sitemap 처럼 작성해둔 robots.txt 파일을 테스트 후 제출해보자</p>
+<h3 id="robots-txt-테스터"><a href="#robots-txt-테스터" class="headerlink" title="robots.txt 테스터"></a>robots.txt 테스터</h3><hr>
+<p>sitemap 처럼 작성해둔 robots.txt 파일을 테스트 후 제출해보자</p>
 <p>아래 그림에서 처럼 하단부에 파일명을 쓰고 테스트 후 제출하면 된다.</p>
 <p><img src="/image/robotstxt.jpg" alt="robots.txt 테스트/제출"></p>
-<h3 id="Fetch-As-Google"><a href="#Fetch-As-Google" class="headerlink" title="Fetch As Google"></a>Fetch As Google</h3><p>구글에서 사이트의 URL을 크롤링하거나 랜더링하는 방식을 테스트 할 수 있는 곳이다.<br>내 사이트를 잘 가져가고 있는지, 이미지나 스크립트가 봇을 차단하는지 등을 알 수 있다.<br>꼭 해보시길 권장한다.</p>
+<h3 id="Fetch-As-Google"><a href="#Fetch-As-Google" class="headerlink" title="Fetch As Google"></a>Fetch As Google</h3><hr>
+<p>구글에서 사이트의 URL을 크롤링하거나 랜더링하는 방식을 테스트 할 수 있는 곳이다.<br>내 사이트를 잘 가져가고 있는지, 이미지나 스크립트가 봇을 차단하는지 등을 알 수 있다.<br>꼭 해보시길 권장한다.</p>
 <p>메뉴를 클릭해서 url 넣는 곳에 해당 페이지를 넣으면 된다.<br>넣지 않으면 루트페이지를 가져온다.</p>
 <p><code>가져오기</code> : <em>페이지 URL을 가져온다.</em><br><code>가져오기 및 렌더링</code> : <em>페이지에 포함된 리소스(이미지나 스크립트)를 렌더링합니다.</em></p>
 <p>버튼을 클릭하면 색인생성요청 이라는 버튼이 나타난다.</p>
@@ -315,7 +407,8 @@
 <p><img src="/image/fetchasgoogle2.jpg" alt="fetch as google제출"></p>
 <p>그리고 목록을 클릭해서 결과 확인이 가능하다.</p>
 <p>크롤링 메뉴에서는 크롤링오류나 크롤링통계도 확인 가능하다.</p>
-<h3 id="구글-검색-확인"><a href="#구글-검색-확인" class="headerlink" title="구글 검색 확인"></a>구글 검색 확인</h3><p>설정이 마무리 되면 이제 구글봇들이 크롤링을 하게되고 일정 시간이 지나면 구글에 반영이 된다.<br>구글에 반영이 잘 되고 있는 지 확인은 구글 사이트에서 확인가능하다.</p>
+<h3 id="구글-검색-확인"><a href="#구글-검색-확인" class="headerlink" title="구글 검색 확인"></a>구글 검색 확인</h3><hr>
+<p>설정이 마무리 되면 이제 구글봇들이 크롤링을 하게되고 일정 시간이 지나면 구글에 반영이 된다.<br>구글에 반영이 잘 되고 있는 지 확인은 구글 사이트에서 확인가능하다.</p>
 <p><code>site: [도메인]   ex) site:loenoh.github.io</code></p>
 <p>이렇게 치면 구글에서 크롤링된 페이지가 검색이 된다.</p>
 
@@ -535,6 +628,25 @@
                     <hr>
                 </div>
                 
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://loenoh.github.io/2018/02/07/네이버-웹마스터도구-사이트등록-SEO/">
+                            <h3 class="media-heading">네이버 웹마스터도구에 사이트등록 SEO</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Feb 7, 2018
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
             </div>
         </div>
         <div class="modal-footer">
@@ -542,7 +654,7 @@
                 data-message-zero="no post found"
                 data-message-one="1 post found"
                 data-message-other="{n} posts found">
-                6 posts found
+                7 posts found
             </p>
         </div>
     </div>
