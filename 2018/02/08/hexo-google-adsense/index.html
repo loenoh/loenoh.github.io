@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="로이 스토리">
     <title>Hexo 구글애드센스(Google Adsense) 추가 - 로이 스토리</title>
-    <link rel="canonical" href="https://loenoh.github.io/2018/02/07/hexo-google-adsense/"/>
+    <link rel="canonical" href="https://loenoh.github.io/2018/02/08/hexo-google-adsense/"/>
     <meta name="author" content="Loe Noh">
     
         <meta name="keywords" content="hexo,google,adsense">
@@ -20,7 +20,7 @@
 <meta name="keywords" content="hexo,google,adsense">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="Hexo 구글애드센스(Google Adsense) 추가">
-<meta property="og:url" content="https://loenoh.github.io/2018/02/07/hexo-google-adsense/index.html">
+<meta property="og:url" content="https://loenoh.github.io/2018/02/08/hexo-google-adsense/index.html">
 <meta property="og:site_name" content="로이 스토리">
 <meta property="og:description" content="Hexo 블로그에 구글애드센스(Google Adsense)를 추가해보자.">
 <meta property="og:locale" content="en">
@@ -28,7 +28,7 @@
 <meta property="og:image" content="https://loenoh.github.io/image/googleadsense2.jpg">
 <meta property="og:image" content="https://loenoh.github.io/image/googleadsense3.jpg">
 <meta property="og:image" content="https://loenoh.github.io/image/googleadsense4.jpg">
-<meta property="og:updated_time" content="2018-02-06T20:32:40.509Z">
+<meta property="og:updated_time" content="2018-02-06T20:42:06.419Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 구글애드센스(Google Adsense) 추가">
 <meta name="twitter:description" content="Hexo 블로그에 구글애드센스(Google Adsense)를 추가해보자.">
@@ -269,9 +269,9 @@
     
     
         <div class="post-meta">
-    <time itemprop="datePublished" datetime="2018-02-07T03:57:11+09:00">
+    <time itemprop="datePublished" datetime="2018-02-08T03:57:11+09:00">
 	
-		    Feb 07, 2018
+		    Feb 08, 2018
     	
     </time>
     
@@ -301,7 +301,7 @@
 
             <p>Hexo 블로그에 Google Adsense를 추가해볼려고 합니다.</p>
 <p>구글애드센스를 추가한다는 것은 즉, 블로그에 광고를 삽입하겠다는 뜻입니다.</p>
-<p>마찬가지로 광고삽입 전에 구글애드센스에 가입이 되어야하고 가입과정은 생략하겠습니다.</p>
+<p>마찬가지로 광고삽입 전 구글애드센스에 가입이 되어야하고 가입과정은 생략하겠습니다.</p>
 <p>사이트 : <a href="https://www.google.co.kr/adsense/start/#/?modal_active=none" target="_blank" rel="noopener">구글애드센스(Google Adsense)</a></p>
 <p><br></p>
 <p><strong>전체적인 작업진행</strong></p>
@@ -344,7 +344,7 @@
 <h4 id="사이드바-하단부분-추가"><a href="#사이드바-하단부분-추가" class="headerlink" title="사이드바 하단부분 추가"></a>사이드바 하단부분 추가</h4><p>사이드바 하단에 추가는 개인적으로는 보기가 좀 그래서 추가는 안했던 부분인데 필요하신 분은 추가하시면 될 것 같습니다.</p>
 <p>수정파일위치와 파일내용은 아래와 같고, 파일내용은 길이 관계로 일부만 발췌했습니다.</p>
 <p>파일위치 : <code>테마폴더/layout/_partial/sidebar.ejs</code></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;nav id=<span class="string">"sidebar"</span> data-behavior=<span class="string">"&lt;%= sidebarBehavior %&gt;"</span>&gt;</span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"sidebar-container"</span>&gt;</span><br><span class="line">        &lt;% <span class="keyword">if</span> (authorPicture) &#123; %&gt;</span><br><span class="line">            &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"sidebar-profile"</span>&gt;</span><br><span class="line">            <span class="comment">// 프로필이 나오는 부분</span></span><br><span class="line">            &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">        &lt;% &#125; %&gt;</span></span><br><span class="line"><span class="regexp">        &lt;% for (var i in theme.sidebar) &#123; %&gt;</span></span><br><span class="line"><span class="regexp">            &lt;ul class="sidebar-buttons"&gt;</span></span><br><span class="line"><span class="regexp">            /</span><span class="regexp">/ 사이드바 아이콘들이 나오는 부분(메뉴, sns등)</span></span><br><span class="line"><span class="regexp">            &lt;/u</span>l&gt;</span><br><span class="line">        &lt;% &#125; %&gt;</span><br><span class="line">        &lt;%- partial(<span class="string">'_custom_ads/google_adsense'</span>) %&gt;</span><br><span class="line">    &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>nav&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">nav</span> <span class="attr">id</span>=<span class="string">"sidebar"</span> <span class="attr">data-behavior</span>=<span class="string">"&lt;%= sidebarBehavior %&gt;"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"sidebar-container"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">%</span> <span class="attr">if</span> (<span class="attr">authorPicture</span>) &#123; %&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"sidebar-profile"</span>&gt;</span></span><br><span class="line">            // 프로필이 나오는 부분</span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">%</span> &#125; %&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">%</span> <span class="attr">for</span> (<span class="attr">var</span> <span class="attr">i</span> <span class="attr">in</span> <span class="attr">theme.sidebar</span>) &#123; %&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"sidebar-buttons"</span>&gt;</span></span><br><span class="line">            // 사이드바 아이콘들이 나오는 부분(메뉴, sns등)</span><br><span class="line">            <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">%</span> &#125; %&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">%-</span> <span class="attr">partial</span>('<span class="attr">_custom_ads</span>/<span class="attr">google_adsense</span>') %&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">nav</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
             
 
@@ -392,7 +392,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://loenoh.github.io/2018/02/07/hexo-google-adsense/" title="Share on Facebook">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://loenoh.github.io/2018/02/08/hexo-google-adsense/" title="Share on Facebook">
                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
                 </a>
             </li>
@@ -400,7 +400,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://loenoh.github.io/2018/02/07/hexo-google-adsense/" title="Share on Twitter">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://loenoh.github.io/2018/02/08/hexo-google-adsense/" title="Share on Twitter">
                     <i class="fa fa-twitter" aria-hidden="true"></i>
                 </a>
             </li>
@@ -408,7 +408,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://loenoh.github.io/2018/02/07/hexo-google-adsense/" title="Share on Google+">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://loenoh.github.io/2018/02/08/hexo-google-adsense/" title="Share on Google+">
                     <i class="fa fa-google-plus" aria-hidden="true"></i>
                 </a>
             </li>
@@ -497,7 +497,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://loenoh.github.io/2018/02/07/hexo-google-adsense/" title="Share on Facebook">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://loenoh.github.io/2018/02/08/hexo-google-adsense/" title="Share on Facebook">
                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
                 </a>
             </li>
@@ -505,7 +505,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://loenoh.github.io/2018/02/07/hexo-google-adsense/" title="Share on Twitter">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://loenoh.github.io/2018/02/08/hexo-google-adsense/" title="Share on Twitter">
                     <i class="fa fa-twitter" aria-hidden="true"></i>
                 </a>
             </li>
@@ -513,7 +513,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://loenoh.github.io/2018/02/07/hexo-google-adsense/" title="Share on Google+">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://loenoh.github.io/2018/02/08/hexo-google-adsense/" title="Share on Google+">
                     <i class="fa fa-google-plus" aria-hidden="true"></i>
                 </a>
             </li>
@@ -546,7 +546,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://loenoh.github.io/2018/02/07/hexo-google-adsense/">
+                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://loenoh.github.io/2018/02/08/hexo-google-adsense/">
                     <i class="fa fa-facebook-official" aria-hidden="true"></i><span>Share on Facebook</span>
                 </a>
             </li>
@@ -554,7 +554,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://loenoh.github.io/2018/02/07/hexo-google-adsense/">
+                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://loenoh.github.io/2018/02/08/hexo-google-adsense/">
                     <i class="fa fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
                 </a>
             </li>
@@ -562,7 +562,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://loenoh.github.io/2018/02/07/hexo-google-adsense/">
+                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://loenoh.github.io/2018/02/08/hexo-google-adsense/">
                     <i class="fa fa-google-plus" aria-hidden="true"></i><span>Share on Google+</span>
                 </a>
             </li>
@@ -772,13 +772,13 @@
                 <div class="media">
                     
                     <div class="media-body">
-                        <a class="link-unstyled" href="https://loenoh.github.io/2018/02/07/hexo-google-adsense/">
+                        <a class="link-unstyled" href="https://loenoh.github.io/2018/02/08/hexo-google-adsense/">
                             <h3 class="media-heading">Hexo 구글애드센스(Google Adsense) 추가</h3>
                         </a>
                         <span class="media-meta">
                             <span class="media-date text-small">
                                 
-                                    Feb 7, 2018
+                                    Feb 8, 2018
                                 
                             </span>
                         </span>
@@ -811,9 +811,9 @@
     
         <script>
              var disqus_config = function () {
-                 this.page.url = 'https://loenoh.github.io/2018/02/07/hexo-google-adsense/';
+                 this.page.url = 'https://loenoh.github.io/2018/02/08/hexo-google-adsense/';
                  
-                    this.page.identifier = '/2018/02/07/hexo-google-adsense/';
+                    this.page.identifier = '/2018/02/08/hexo-google-adsense/';
                  
              };
             (function() {
