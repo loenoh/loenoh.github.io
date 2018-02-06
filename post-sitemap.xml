@@ -7,8 +7,24 @@
     </url>
 
     <url>
+        <loc>https://loenoh.github.io/2018/01/25/hexo-tranquilpeak-theme-%EC%9B%B9%ED%8F%B0%ED%8A%B8%EC%A0%81%EC%9A%A9/</loc>
+        <lastmod>2018-02-06T14:59:55.473Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://loenoh.github.io/2017/12/29/github-hexo-theme-atom-%EC%84%A4%EC%B9%98/</loc>
+        <lastmod>2018-02-01T13:49:10.323Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://loenoh.github.io/2018/01/31/hexo-tranquilpeak-theme-disqus%EC%A0%81%EC%9A%A9/</loc>
-        <lastmod>2018-02-01T07:37:28.361Z</lastmod>
+        <lastmod>2018-02-01T13:48:41.447Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -33,22 +49,6 @@
     <url>
         <loc>https://loenoh.github.io/2017/12/31/hexo-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%84%A4%EC%A0%95/</loc>
         <lastmod>2018-01-31T04:04:20.929Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://loenoh.github.io/2018/01/25/hexo-tranquilpeak-theme-%EC%9B%B9%ED%8F%B0%ED%8A%B8%EC%A0%81%EC%9A%A9/</loc>
-        <lastmod>2018-01-31T04:03:42.772Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://loenoh.github.io/2017/12/29/github-hexo-theme-atom-%EC%84%A4%EC%B9%98/</loc>
-        <lastmod>2018-01-31T04:02:11.469Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

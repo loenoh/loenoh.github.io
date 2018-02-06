@@ -2,43 +2,8 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://loenoh.github.io/tags/github/</loc>
-        <lastmod>2018-01-31T04:02:11.469Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://loenoh.github.io/tags/atom/</loc>
-        <lastmod>2018-01-31T04:02:11.469Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://loenoh.github.io/tags/theme/</loc>
-        <lastmod>2018-01-31T04:02:11.469Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://loenoh.github.io/tags/%EC%9B%B9%ED%8F%B0%ED%8A%B8/</loc>
-        <lastmod>2018-01-31T04:03:42.772Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://loenoh.github.io/tags/plugin/</loc>
         <lastmod>2018-01-31T04:24:43.866Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://loenoh.github.io/tags/seo/</loc>
-        <lastmod>2018-01-31T06:27:53.984Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -51,22 +16,57 @@
     </url>
 
     <url>
-        <loc>https://loenoh.github.io/tags/hexo/</loc>
-        <lastmod>2018-02-01T07:37:28.361Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://loenoh.github.io/tags/tranquilpeak/</loc>
-        <lastmod>2018-02-01T07:37:28.361Z</lastmod>
+        <loc>https://loenoh.github.io/tags/seo/</loc>
+        <lastmod>2018-01-31T06:27:53.984Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://loenoh.github.io/tags/disqus/</loc>
-        <lastmod>2018-02-01T07:37:28.361Z</lastmod>
+        <lastmod>2018-02-01T13:48:41.447Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://loenoh.github.io/tags/github/</loc>
+        <lastmod>2018-02-01T13:49:10.323Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://loenoh.github.io/tags/atom/</loc>
+        <lastmod>2018-02-01T13:49:10.323Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://loenoh.github.io/tags/theme/</loc>
+        <lastmod>2018-02-01T13:49:10.323Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://loenoh.github.io/tags/hexo/</loc>
+        <lastmod>2018-02-06T14:59:55.473Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://loenoh.github.io/tags/tranquilpeak/</loc>
+        <lastmod>2018-02-06T14:59:55.473Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://loenoh.github.io/tags/%EC%9B%B9%ED%8F%B0%ED%8A%B8/</loc>
+        <lastmod>2018-02-06T14:59:55.473Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
