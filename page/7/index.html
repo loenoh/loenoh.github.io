@@ -257,15 +257,15 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title" itemprop="headline">
                     
-                        <a class="link-unstyled" href="../../2017/12/31/hexo-기본사용법-설정/">
-                            Hexo 기본사용법 설정
+                        <a class="link-unstyled" href="../../2018/01/25/hexo-tranquilpeak-theme-웹폰트적용/">
+                            Hexo Tranquilpeak Theme 웹폰트 적용
                         </a>
                     
                 </h1>
                 <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2017-12-31T01:32:52+09:00">
+    <time itemprop="datePublished" datetime="2018-01-25T13:32:11+09:00">
 	
-		    Dec 31, 2017
+		    Jan 25, 2018
     	
     </time>
     
@@ -280,25 +280,21 @@
             </div>
             
                 <div class="postShorten-content" itemprop="articleBody">
-                    <p>지난 포스팅을 통해서 기본적인 설치를 마쳤다면 로컬에서 Hexo 서버를 띄워서 확인 가능합니다.<br>지난 포스팅 : <a href="/2017/12/29/github-hexo-theme-atom-설치">Git  Hexo  Theme  Atom 설치</a></p>
-<h4 id="로컬에서-확인하기"><a href="#로컬에서-확인하기" class="headerlink" title="로컬에서 확인하기"></a>로컬에서 확인하기</h4><p>hexo가 설치된 곳으로 이동해서 작업한다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<p>서버를 구동한 뒤 <strong><a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></strong> 으로 확인한다.</p>
-<h2 id="1-기본사용법"><a href="#1-기본사용법" class="headerlink" title="1. 기본사용법"></a>1. 기본사용법</h2><hr>
-<h3 id="포스팅-작성"><a href="#포스팅-작성" class="headerlink" title="포스팅 작성"></a>포스팅 작성</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new 글제목</span><br></pre></td></tr></table></figure>
-<p>post_title에는 포스팅의 제목을 적으면 된다.</p>
-<p>기본 포스팅들이 저장되는 위치는 /source/_posts 폴더에 저장된다.</p>
-<p>포스팅이 작성이 되면 로컬에서도 바로 확인이 가능하고 이상이 없으면 github에 배포를 한다.</p>
-<h3 id="배포"><a href="#배포" class="headerlink" title="배포"></a>배포</h3><ul>
-<li>github에 배포하기위해 로컬에 배포할 정적인 파일을 생성한다.</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate  or  hexo g</span><br></pre></td></tr></table></figure>
-<ul>
-<li>github로 배포한다.</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy  or  hexo d</span><br></pre></td></tr></table></figure>
-<p>한줄로도 가능하다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure></p>
-<p>배포를 했는데 잘 반영이 안될 경우는 로컬에 있는 정적인 파일을 한번 지우고 다시 generate을 한번 해 본다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure></p>
+                    <h1 id="구글-웹폰트-적용"><a href="#구글-웹폰트-적용" class="headerlink" title="구글 웹폰트 적용"></a>구글 웹폰트 적용</h1><p>포스팅을 하고 나니 왠지 모르게 폰트가 맘에 안 든다. 그래서 구글 웹폰트에서 맘에 드는 것을 선택을 해서 적용해 보도록 하자.</p>
+<p>먼저 구글 웹폰트들이 있는 곳으로 가보자</p>
+<p>구글 웹폰트 : <a href="https://fonts.google.com/earlyaccess" target="_blank" rel="noopener">https://fonts.google.com/earlyaccess</a></p>
+<p>여기서 한글은 ko로 검색을 하면 나온다.</p>
+<p>적용할 폰트를 찾았으면 CSS를 수정해야한다. 여기서는 Hanna, Noto Sans KR, Nanum Gothic Coding, Nanum Gothic을 적용해보자.</p>
+<p>여기서는 테스트 목적으로 여러가지 폰트를 적용해 볼텐데 그게 아니라면 필요한 폰트만 적용하는게 맞다고 본다.</p>
+<p>그럼  themes\tranquilpeak\source_css\tranquilpeak.scss 파일을 열어 다음 부분을 추가한다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@import</span><br><span class="line">    url(//fonts.googleapis.com/earlyaccess/notosanskr.css),</span><br><span class="line">    url(//fonts.googleapis.com/earlyaccess/nanumgothic.css),</span><br><span class="line">    url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css),</span><br><span class="line">    url(//fonts.googleapis.com/earlyaccess/hanna.css);</span><br></pre></td></tr></table></figure>
+<p>웹폰트가 위치한 부분을 지정을 했다.</p>
+<p>다음은 해당 폰트가 적용될 부분에 대해서 CSS를 열어 적용해보자.</p>
+<p>themes\tranquilpeak\source\_css\utils\_variables.scss 파일을 열어 각각 폰트를 변수로 지정하고 적용할 부분에 지정해 주면된다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// Font families</span><br><span class="line">$open-sans:            &apos;Open Sans&apos;;</span><br><span class="line">$open-sans-sans-serif: &apos;Open Sans&apos;, sans-serif;</span><br><span class="line">$merriweather-serif:   &apos;Merriweather&apos;, serif;</span><br><span class="line">$monospace:             Menlo, Consolas, monospace;</span><br><span class="line">$noto-sans-kr:          &apos;Noto Sans KR&apos;, sans-serif;</span><br><span class="line">$nanum-gothic-coding:   &apos;Nanum Gothic Coding&apos;, monospace;</span><br><span class="line">$nanum-gothic:          &apos;Nanum Gothic&apos;, sans-serif;</span><br><span class="line">$hanna:                 &apos;Hanna&apos;, sans-serif;</span><br></pre></td></tr></table></figure>
+<p>변수로 지정이 되었으면 아래에 적용할 폰트를 지정해 주면 된다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$font-family-base: $nanum-gothic;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$font-families: (</span><br><span class="line">   // base</span><br><span class="line">   &apos;headings&apos;:          $hanna,</span><br><span class="line">   // components</span><br><span class="line">   &apos;code&apos;:              $nanum-gothic-coding,</span><br><span class="line">   &apos;caption&apos;:           $noto-sans-kr,</span><br><span class="line">   &apos;image-gallery&apos;:     $noto-sans-kr,</span><br><span class="line">   &apos;post-header-cover&apos;: $noto-sans-kr,</span><br><span class="line">   &apos;post-meta&apos;:         $noto-sans-kr,</span><br><span class="line">   &apos;post-content&apos;:      $noto-sans-kr,</span><br><span class="line">   &apos;post-excerpt-link&apos;: $noto-sans-kr,</span><br><span class="line">   &apos;highlight&apos;:         $nanum-gothic-coding,</span><br><span class="line">   // layout</span><br><span class="line">   &apos;sidebar&apos;:           $noto-sans-kr</span><br><span class="line"> );</span><br></pre></td></tr></table></figure>
 
                     
                         
@@ -306,7 +302,7 @@
                     
                     
                         <p>
-                            <a href="../../2017/12/31/hexo-기본사용법-설정/#post-footer" class="postShorten-excerpt_link link">
+                            <a href="../../2018/01/25/hexo-tranquilpeak-theme-웹폰트적용/#post-footer" class="postShorten-excerpt_link link">
                                 Comment and share
                             </a>
                         </p>
@@ -335,7 +331,7 @@
             </a>
           </li>
         
-        <li class="pagination-number">page 7 of 8</li>
+        <li class="pagination-number">page 7 of 9</li>
     </ul>
 </div>
 
@@ -567,6 +563,25 @@
                     <hr>
                 </div>
                 
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://loenoh.github.io/2018/02/11/book-review-head-first-python/">
+                            <h3 class="media-heading">Book Review (Head First Python)</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Feb 11, 2018
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
             </div>
         </div>
         <div class="modal-footer">
@@ -574,7 +589,7 @@
                 data-message-zero="no post found"
                 data-message-one="1 post found"
                 data-message-other="{n} posts found">
-                8 posts found
+                9 posts found
             </p>
         </div>
     </div>
